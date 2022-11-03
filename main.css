@@ -553,25 +553,24 @@ section[id="contact"] textarea {
 /* section automatization begin
 ********************************************************************/
 
-section[id="automatization"] {
-    /* min-height: 50vh; */
+section[id="service"] {
     background-color: rgba(255, 255, 255, 1);
     color: rgba(0, 0, 0, 1);
     text-align: justify;
 }
 
-section[id="automatization"] h2 {
+section[id="service"] h2 {
     padding-bottom: 0.5em;
     text-align: center;
 }
 
-section[id="automatization"] img {
+section[id="service"] img {
     width: 50%;
     float: left;
     padding-right: 1em;
 }
 
-section[id="automatization"] .box {
+section[id="service"] .box {
     padding: 1em;
     width: calc(100% / 2);
     float: left;
@@ -579,11 +578,11 @@ section[id="automatization"] .box {
     line-height: 1.5em;
 }
 
-section[id="automatization"] li {
+section[id="service"] li {
     list-style-type: none;
 }
 
-section[id="automatization"] li:before {
+section[id="service"] li:before {
     content: '\276F';
     display: inline-block;
     margin-right: 1em;
@@ -592,159 +591,6 @@ section[id="automatization"] li:before {
 /* section automatization end 
 ********************************************************************/
 
-
-
-
-
-
-/* section automatization begin
-********************************************************************/
-
-section[id="elektrik"] {
-    min-height: 50vh;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-/* section automatization end 
-********************************************************************/
-
-
-
-
-
-
-
-/* section automatization begin
-********************************************************************/
-
-section[id="video-surveillance"] {
-    min-height: 50vh;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-/* section automatization end 
-********************************************************************/
-
-
-
-
-
-
-
-/* section automatization begin
-********************************************************************/
-
-section[id="security-systems"] {
-    min-height: 50vh;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-/* section automatization end 
-********************************************************************/
-
-
-
-
-
-
-
-
-/* section automatization begin
-********************************************************************/
-
-section[id="acs"] {
-    min-height: 50vh;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-/* section automatization end 
-********************************************************************/
-
-
-
-
-
-
-
-
-/* section automatization begin
-********************************************************************/
-
-section[id="solar-energy"] {
-    min-height: 50vh;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-/* section automatization end 
-********************************************************************/
-
-
-
-
-
-
-
-
-
-/* section automatization begin
-********************************************************************/
-
-section[id="dispatching"] {
-    min-height: 50vh;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-/* section automatization end 
-********************************************************************/
-
-
-
-
-
-
-
-
-
-
-/* section automatization begin
-********************************************************************/
-
-section[id="cinema"] {
-    min-height: 50vh;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-/* section automatization end 
-********************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-/* section automatization begin
-********************************************************************/
-
-section[id="audio"] {
-    min-height: 50vh;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-/* section automatization end 
-********************************************************************/
 
 
 
