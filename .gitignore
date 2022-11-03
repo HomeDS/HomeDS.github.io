@@ -1,0 +1,21 @@
+# private file
+_*
+*.config
+
+# logics
+*.php
+
+# Binaries
+*.dll
+*.so
+*.dylib
+*.exe
+
+
+# log
+*.out
+*.log
+*.err
+
+
+

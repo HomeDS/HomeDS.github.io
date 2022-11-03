@@ -1,0 +1,1324 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: 0.3s;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+html {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* end 
+********************************************************************/
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+/* scrollbar begin 
+********************************************************************/
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.35);
+    opacity: 0.1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* scrollbar end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* header begin 
+********************************************************************/
+
+/* header {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+} */
+
+header .up {
+    width: 48px;
+    height: 48px;
+    background-image: url(/images/icons/up.png);
+    text-align: center;
+    z-index: 1;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+}
+
+header .nav-pad-icon {
+    display: none;
+}
+
+
+header .logo-text {
+    display: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: #fff 1px 0 0px, #fff 0 1px 0px, #fff -1px 0 0px, #fff 0 -1px 0px;
+}
+
+/* header end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* slideshow begin 
+********************************************************************/
+
+.posters {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.posters .slides {
+    display: none;
+}
+
+.posters .slides img {
+    width: 100%;
+}
+
+.posters h1 {
+    /* font-size: 5.5em; */
+    font-size: 7vw;
+    opacity: 0.5;
+}
+
+.posters p {
+    font-size: 1.2em;
+}
+
+.posters .slides .text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    /* top: 15%; */
+    bottom: 5%;
+}
+
+.posters .slides .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+.posters .slides .gradient {
+    /* display: inline-block; */
+    position: relative;
+    line-height: 0;
+    width: 100%;
+}
+
+/* slideshow end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* main begin
+********************************************************************/
+
+main {
+    background-color: rgba(0, 0, 0, 1);
+    min-height: 100vh;
+}
+
+/* main end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+/* section begin
+********************************************************************/
+
+section {
+    clear: both;
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+section article {
+    clear: both;
+    margin: auto;
+    width: 90%;
+    /* padding-top: 1em; */
+    padding-bottom: 1em;
+}
+
+section h3 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+section blockquote {
+    font-size: 1em;
+    text-align: center;
+}
+
+section button {
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    font-size: 1em;
+    font-weight: bold;
+    mix-blend-mode: difference;
+    padding: 0.5em 1em 0.5em 1em;
+
+}
+
+
+section button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470%;
+    width: 140%;
+    background: white;
+    mix-blend-mode: difference;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+}
+
+section button:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+
+
+
+/* section service begin
+********************************************************************/
+section[id="services"] {
+    min-height: 50vh;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+section[id="services"] h2 {
+    text-align: center;
+}
+
+section[id="services"] .widget {
+    float: left;
+    width: calc(100% / 3);
+    padding: 1em;
+}
+
+section[id="services"] .balance {
+    display: none;
+}
+
+section[id="services"] .widget .effect {
+    overflow: hidden;
+}
+
+section[id="services"] .widget a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+section[id="services"] .widget p {
+    text-align: center;
+}
+
+section[id="services"] .widget img {
+    width: 100%;
+}
+
+/* section service end 
+********************************************************************/
+
+
+
+
+
+/* section aboutus begin
+********************************************************************/
+section[id="aboutus"] {
+    min-height: 30vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+section[id="aboutus"] h2 {
+    text-align: center;
+}
+
+section[id="aboutus"] li {
+    list-style-type: none;
+    padding-top: 0.5em;
+    line-height: 1.5em;
+}
+
+section[id="aboutus"] li:before {
+    content: '\2714';
+    display: inline-block;
+    margin-right: 1em;
+    color: rgba(64, 223, 32, 1);
+}
+
+section[id="aboutus"] p {
+    text-indent: 1.5em;
+    line-height: 1.5em;
+}
+
+section[id="aboutus"] .box {
+    float: left;
+    width: calc(100% / 2);
+    padding: 1em;
+    text-align: justify;
+}
+
+section[id="aboutus"] article[id="homeds"] {
+    text-align: justify;
+}
+
+section[id="aboutus"] article[id="whywe"] {
+    text-align: justify;
+}
+
+/* section aboutus end 
+********************************************************************/
+
+
+
+
+
+
+/* section portfolio begin
+********************************************************************/
+section[id="portfolio"] {
+    min-height: 30vh;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+section[id="portfolio"] article {
+    padding-top: 1em;
+}
+
+section[id="portfolio"] .widget {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0.1%;
+}
+
+section[id="portfolio"] .widget img {
+    width: 100%;
+}
+
+section[id="portfolio"] .widget .effect {
+    width: 100%;
+    position: relative;
+}
+
+
+section[id="portfolio"] .widget h4 {
+    font-size: 1.8em;
+    font-weight: bolder;
+    position: absolute;
+    text-align: center;
+    top: calc(40% - 12px);
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    text-decoration: none;
+}
+
+/* section portfolio end 
+********************************************************************/
+
+
+
+
+
+
+/* section portfolio begin
+********************************************************************/
+
+section[id="contact"] {
+    min-height: 30vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+section[id="contact"] .box {
+    float: left;
+    width: 50%;
+    padding: 1em;
+    text-align: left;
+}
+
+section[id="contact"] .box p {
+    text-indent: 1.5em;
+    line-height: 1.5em;
+}
+
+section[id="contact"] h5 {
+    font-size: 1.1em;
+    padding-top: 1em;
+    padding-bottom: 0.25em;
+}
+
+section[id="contact"] a {
+    padding-left: 1em;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+section[id="contact"] a img {
+    width: 40px;
+    height: 40px;
+}
+
+section[id="contact"] #gmap_canvas img {
+    max-width: none !important;
+    background: none !important
+}
+
+section[id="contact"] .gmap {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+section[id="contact"] .gmap iframe {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+}
+
+section[id="contact"] input {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 1em;
+    padding: 4px;
+}
+
+section[id="contact"] input[type="submit"] {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 4px;
+}
+
+section[id="contact"] textarea {
+    font-size: 1em;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 8px;
+    padding: 4px;
+}
+
+
+/* section portfolio end 
+********************************************************************/
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="automatization"] {
+    /* min-height: 50vh; */
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    text-align: justify;
+}
+
+section[id="automatization"] h2 {
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+section[id="automatization"] img {
+    width: 50%;
+    float: left;
+    padding-right: 1em;
+}
+
+section[id="automatization"] .box {
+    padding: 1em;
+    width: calc(100% / 2);
+    float: left;
+    text-indent: 1.5em;
+    line-height: 1.5em;
+}
+
+section[id="automatization"] li {
+    list-style-type: none;
+}
+
+section[id="automatization"] li:before {
+    content: '\276F';
+    display: inline-block;
+    margin-right: 1em;
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="elektrik"] {
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="video-surveillance"] {
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="security-systems"] {
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="acs"] {
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="solar-energy"] {
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="dispatching"] {
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="cinema"] {
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/* section automatization begin
+********************************************************************/
+
+section[id="audio"] {
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* section automatization end 
+********************************************************************/
+
+
+
+
+/* section end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* footer begin 
+********************************************************************/
+
+footer {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+footer a {
+    text-decoration: none;
+    padding-bottom: 1%;
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .icon-bar br {
+    display: none;
+}
+
+footer .icon-bar img {
+    width: 48px;
+}
+
+footer .icon-bar {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer .icon-bar a {
+    display: inline-block;
+    margin-right: 1%;
+    transform: scale(0.65);
+}
+
+
+/* footer end 
+********************************************************************/
+
+
+
+
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {}
+
+@media (prefers-color-scheme: dark) {}
+
+@media (max-width: 359px) {
+    footer .icon-bar br {
+        display: inline;
+    }
+}
+
+@media (max-width: 599px) {
+    .posters .slides .text {
+        max-width: 90%;
+        left: 5%;
+    }
+
+    section article {
+        width: 96%;
+    }
+
+    section article .box {
+        width: 100%;
+    }
+
+    .posters h1 {
+        font-size: 2em;
+    }
+
+    section[id="services"] {
+        width: 100%;
+    }
+
+    section[id="services"] .widget {
+        width: 100%;
+    }
+
+    section[id="portfolio"] .widget {
+        width: 100%;
+    }
+
+    section[id="portfolio"] .balance {
+        display: none;
+    }
+
+    section[id="aboutus"] article .box {
+        width: 100%;
+    }
+
+    section[id="contact"] article .box {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    .posters h1 {
+        font-size: 2.5em;
+    }
+
+    section article {
+        width: 99%;
+    }
+
+    section[id="services"] {
+        width: 100%;
+    }
+
+    section[id="services"] .widget {
+        width: calc(100% / 2);
+    }
+
+    section[id="portfolio"] .widget {
+        width: calc(100% / 2);
+    }
+
+    section[id="portfolio"] .balance {
+        display: none;
+    }
+
+    section[id="aboutus"] article .box {
+        width: 100%;
+    }
+
+    section[id="services"] .balance {
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    .posters {
+        display: none;
+    }
+
+    main {
+        transform: translateX(100%);
+        animation: animain 0.5s forwards;
+    }
+
+    @keyframes animain {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    header {
+        width: 100%;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    header img {
+        height: 42px;
+        top: 0;
+        left: 10px;
+        z-index: 2;
+        position: fixed;
+    }
+
+    header .nav-up {
+        width: 48px;
+        height: 48px;
+        background-image: url(/styles/icon/up.png);
+        text-align: center;
+        z-index: 1;
+        position: fixed;
+        bottom: 1%;
+        right: 4%;
+        overflow: hidden;
+        display: block;
+        text-decoration: none;
+    }
+
+    header nav {
+        margin-top: 50px;
+        display: block;
+        position: absolute;
+        transform: translateX(100%);
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 420px;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        transition: 0.75s;
+        z-index: 2;
+    }
+
+    header nav a {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+
+    header nav .nav-main {
+        padding-top: 1em;
+        flex: 0 0 100%;
+    }
+
+    header nav li {
+        list-style-type: none;
+    }
+
+    header nav ul li {
+        padding: 0.3em 1em 0.3em 1.5em;
+    }
+
+    header .nav-head {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 1);
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    header .nav-head span {
+        padding-right: 10px;
+        font-size: 36px;
+        margin-left: auto;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .nav-is-toggled nav {
+        transform: translateX(0);
+    }
+
+    header .nav-is-toggled::after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    section[id="services"] h3 {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+    /* slideshow begin ***************************************************************/
+    .posters {
+        min-height: 18vh;
+    }
+
+    /* slideshow end *****************************************************************/
+
+    /* header begin ******************************************************************/
+    header {
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        width: 100%;
+        height: 50px;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    header .nav-head {
+        display: none;
+    }
+
+    header .nav-pad-icon {
+        padding-left: 1em;
+        display: inline;
+    }
+
+    header img {
+        max-height: 42px;
+        float: left;
+        padding-left: 5%;
+    }
+
+    header nav a {
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.1em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    header nav ul li {
+        float: right;
+        padding-top: 18px;
+        padding-right: 0.8em;
+        color: white;
+        list-style-type: none;
+    }
+
+    header nav ul li a {
+        padding-right: 1em;
+    }
+
+    header nav ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: right;
+        padding: 0.5em 1em 0.5em 1em;
+        border-bottom: 1px solid black;
+    }
+
+    header nav ul li ul li a {
+        color: black;
+    }
+
+    header nav ul li ul {
+        display: none;
+        float: none;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    header nav ul li:hover .nav-sub {
+        display: block;
+    }
+
+    /* header end ********************************************************************/
+
+    /* main begin ********************************************************************/
+    main {
+        padding-top: 50px;
+        width: 100%;
+        transform: translateX(-100%);
+        animation: animain 1.5s forwards;
+    }
+
+    @keyframes animain {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* main end **********************************************************************/
+
+    /* footer begin ******************************************************************/
+
+    footer {
+        width: 100%;
+    }
+
+    /* footer end ********************************************************************/
+}
+
+@media (min-width: 1281px) {
+    /* slideshow begin ***************************************************************/
+
+    .posters {
+        min-height: 18vh;
+    }
+
+
+
+    .posters .slides .gradient:after {
+        content: "";
+        display: block;
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+
+    /* slideshow end *****************************************************************/
+
+
+
+
+
+
+    /* header begin ******************************************************************/
+    header {
+        background-color: rgba(0, 0, 0, 1);
+        width: 20%;
+        min-height: 100vh;
+        float: left;
+        z-index: 1;
+        overflow: hidden;
+        position: fixed;
+        transform: translateX(-100%);
+        animation: aniheader 1.5s forwards;
+    }
+
+    @keyframes aniheader {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+    header .nav-head {
+        display: none;
+    }
+
+    header img {
+        width: 70%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+
+    header nav li {
+        list-style-type: none;
+        padding-top: 1em;
+    }
+
+    header nav a {
+        color: rgba(255, 255, 255, 1);
+        font-size: 1em;
+        font-weight: bold;
+        position: relative;
+        text-decoration: none;
+    }
+
+    header nav a:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        width: 0;
+        height: 1.5px;
+        background-color: rgba(255, 255, 255, 1);
+        transition: width 0.35s;
+    }
+
+    header nav a:hover:before {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding-left: 1em;
+    }
+
+    header nav ul li a:hover {
+        padding-left: 2em;
+    }
+
+    header nav ul li ul li a {
+        padding-left: 3em;
+    }
+
+    header nav ul li ul li a:hover {
+        padding-left: 4em;
+    }
+
+    header .up {
+        display: none;
+    }
+
+    /* header end ********************************************************************/
+
+    /* main begin ********************************************************************/
+
+    main {
+        padding-top: 0;
+        float: right;
+        width: 80%;
+        min-height: 100vh;
+        transform: translateX(-100%);
+        animation: animain 1.5s forwards;
+    }
+
+    @keyframes animain {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* main end **********************************************************************/
+
+    section {
+        padding-top: 25px;
+    }
+
+    section[id="services"] .widget .effect img {
+        transition: transform 0.75s;
+    }
+
+    section[id="services"] .widget .effect:hover img {
+        transform: scale(1.1);
+    }
+
+    section[id="portfolio"] .widget .effect h4 {
+        display: none;
+    }
+
+    section[id="portfolio"] .widget .effect:hover h4 {
+        display: block;
+    }
+
+
+    section[id="portfolio"] .widget .effect:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(7, 67, 247, 1));
+        z-index: 1;
+        transition: opacity 0.75s linear;
+        opacity: 0;
+    }
+
+    section[id="portfolio"] .widget .effect:hover:before {
+        opacity: 0.55;
+    }
+
+
+
+
+
+    /* footer begin ******************************************************************/
+
+    footer {
+        float: right;
+        width: 80%;
+    }
+
+    footer .icon-bar a:hover {
+        /* width: 40px; */
+        transform: scale(1) translateY(-1px);
+    }
+
+    /* footer end ********************************************************************/
+}

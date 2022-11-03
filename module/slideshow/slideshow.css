@@ -1,0 +1,36 @@
+.slideshow {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.slideshow h1 {
+    font-size: 3.5em;
+}
+
+.slideshow p {
+    font-size: 1.2em;
+}
+
+.slideshow .slides {
+    display: none
+}
+
+.slideshow .slides img {
+    width: 100%;
+}
+
+.slideshow .slides .text {
+    position: absolute;
+    max-width: 60%;
+    top: 25%;
+    left: 20%;
+}
+
+.slideshow .slides .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
